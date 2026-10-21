@@ -70,9 +70,23 @@
   gap: 48px;
 }
 
+.space-56px {
+  gap: 56px;
+}
+
+.space-64px {
+  gap: 64px;
+}
+
 .ly-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  margin: 20px 0x;
+}
+
+.btn {
+  padding: 24px 0;
+  border: none;
 }
 
 /*# sourceMappingURL=style.css.map */
