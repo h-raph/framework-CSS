@@ -1,0 +1,17 @@
+// # Grid
+// ## Définition du nombre total de colonnes
+$grid-columns: 12;
+
+@for $i from 1 through $grid-columns {
+    .col-#{$i} {
+        // span X signifie "prend X colonnes dans la grille"
+        grid-column: span $i;
+    }
+}
+
+// # Space
+@for $s from 1 through 6 {
+    .space-#{8px * $s} {
+        gap: 8px * $s;
+    }
+}

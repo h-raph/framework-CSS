@@ -1,0 +1,6 @@
+@use '../abstracts/variables' as *;
+
+.ly-grid {
+    display: grid;
+    grid-template-columns: repeat($grid-columns, 1fr);
+}
