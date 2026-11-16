@@ -1,0 +1,59 @@
+@use '../abstracts/variables' as *;
+
+.header {
+    background-color: $color-text-secondary;
+    padding: 8px 5%;
+    border-bottom: 1px solid rgba(249, 247, 234, 0.15);
+
+    &__container {
+        max-width: 1400px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 32px;
+    }
+
+    &__logo {
+        font-size: $size-section;
+        font-weight: $weight-title;
+        color: $color-bg;
+        text-decoration: none;
+
+        span {
+            color: $color-accent;
+        }
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__link {
+        color: $color-bg;
+        text-decoration: none;
+        font-size: $size-text;
+        font-weight: $weight-text;
+        transition: color 0.2s ease;
+
+        &:hover,
+        &--active {
+            color: $color-yellow;
+        }
+    }
+
+    &__button {
+        white-space: nowrap;
+        background-color: $color-yellow;
+        border: none;
+    }
+
+    &__button:hover {
+        background-color: $color-accent;
+    }
+}

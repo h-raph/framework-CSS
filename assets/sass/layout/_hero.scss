@@ -1,0 +1,74 @@
+@use '../abstracts/variables' as *;
+
+.hero {
+    padding: 24px 8%;
+    background-color: $color-bg;
+    color: $color-text-primary;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 24px;
+
+    &__main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        align-items: end;
+        gap: 60px;
+        padding: 80px 0;
+    }
+
+    &__intro {
+        margin-bottom: 24px;
+        color: $color-text-secondary;
+        font-size: $size-text;
+    }
+
+    &__title {
+        font-size: 80px;
+        font-weight: $weight-title;
+        line-height: 0.98;
+        letter-spacing: -3px;
+
+        span {
+            color: $color-accent;
+        }
+    }
+
+    &__aside {
+        max-width: 320px;
+        padding-bottom: 10px;
+    }
+
+    &__text {
+        margin-bottom: 32px;
+        color: $color-text-secondary;
+        font-size: $size-text-intro;
+        line-height: $line-height-text-intro;
+    }
+
+    &__link {
+        display: inline-flex;
+        align-items: center;
+        gap: 20px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid $color-accent;
+        color: $color-text-primary;
+        font-size: $size-text;
+        text-decoration: none;
+        transition: gap 0.2s ease;
+
+        span {
+            color: $color-accent;
+        }
+
+        &:hover {
+            gap: 30px;
+        }
+    }
+
+    &__bottom {
+        padding-top: 20px;
+        border-top: 1px solid $color-text-primary;
+        color: $color-text-secondary;
+    }
+}
