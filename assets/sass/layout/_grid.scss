@@ -5,3 +5,9 @@
     grid-template-columns: repeat($grid-columns, 1fr);
     margin: 20px 0;
 }
+
+.div-grid {
+    padding: 24px 0;
+    border: none;
+    background-color: $color-bg-2;
+}

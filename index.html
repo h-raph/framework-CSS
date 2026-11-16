@@ -10,42 +10,156 @@
 </head>
 
 <body>
+    <header class="header">
+        <div class="header__container">
 
-    <header class="ly-content">
-        <div class="ly-container">
-            <h1 class="">Framework CSS</h1>
+            <a href="#" class="header__logo">
+                Logo<span>.</span>
+            </a>
+
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li><a href="#accueil" class="header__link header__link--active">Accueil</a></li>
+                    <li><a href="#apropos" class="header__link">À propos</a></li>
+                    <li><a href="#services" class="header__link">Services</a></li>
+                    <li><a href="#projets" class="header__link">Projets</a></li>
+                </ul>
+            </nav>
+
+            <a href="#contact" class="btn btn--primary header__button">
+                Me contacter
+            </a>
+
         </div>
     </header>
 
-    <section class="ly-content" id="button" aria-labelledby="button-titre">
-        <h2 class="" id="button-titre">Grid</h2>
-        <p class="">Concrètement, un système de grille à 12 colonnes est une méthode 
-            de mise en page où la largeur de ton écran ou de ton conteneur est découpée
-            en 12 colonnes invisibles et égales.</p>
+    <section class="hero" id="accueil">
+        <div class="hero__main">
+            <div class="hero__heading">
+                <p class="hero__intro">Bienvenue sur notre projet</p>
 
-        <div class="ly-grid space-24px">
-            <button class="col-2 btn">col-2</button>
-            <button class="col-8 btn">col-8</button>
-            <button class="col-2 btn">col-2</button>
-        </div>
+                <h1 class="hero__title">
+                    Notre<br>
+                    Mini-Framework<br>
+                    <span>CSS</span>
+                </h1>
+            </div>
 
-        <div class="ly-grid space-24px">
-            <button class="col-3 btn">col-3</button>
-            <button class="col-5 btn">col-5</button>
-            <button class="col-4 btn">col-4</button>
-        </div>
+            <div class="hero__aside">
+                <p class="hero__text">
+                    Un Projet réalisé par Raphael, Shouraya et Léa,
+                    en utilisant la convention SMACSS et le nommage
+                    BEM.
+                </p>
 
-        <div class="ly-grid space-24px">
-            <button class="col-7 btn">col-7</button>
-            <button class="col-5 btn">col-5</button>
-        </div>
-
-        <div class="ly-grid space-24px">
-            <button class="col-1 btn">col-1</button>
-            <button class="col-9 btn">col-9</button>
-            <button class="col-2 btn">col-2</button>
+                <a href="#projets" class="hero__link">
+                    En savoir plus <span>↗</span>
+                </a>
+            </div>
         </div>
     </section>
+
+
+    <main class="ly-content">
+        <section id="grid">
+            <h2 class="title-section" id="button-titre">Grid</h2>
+            <p class="text-section">Concrètement, un système de grille à 12 colonnes est une méthode
+                de mise en page où la largeur de ton écran ou de ton conteneur est découpée
+                en 12 colonnes invisibles et égales.</p>
+
+            <div class="ly-grid space-24px">
+                <button class="col-2 div-grid">col-2</button>
+                <button class="col-8 div-grid">col-8</button>
+                <button class="col-2 div-grid">col-2</button>
+            </div>
+
+            <div class="ly-grid space-24px">
+                <button class="col-3 div-grid">col-3</button>
+                <button class="col-5 div-grid">col-5</button>
+                <button class="col-4 div-grid">col-4</button>
+            </div>
+
+            <div class="ly-grid space-24px">
+                <button class="col-7 div-grid">col-7</button>
+                <button class="col-5 div-grid">col-5</button>
+            </div>
+
+            <div class="ly-grid space-24px">
+                <button class="col-1 div-grid">col-1</button>
+                <button class="col-9 div-grid">col-9</button>
+                <button class="col-2 div-grid">col-2</button>
+            </div>
+        </section>
+
+        <section id="button">
+            <h2 class="title-section">Button</h2>
+            <p class="text-section">Éléments cliquables stylisés et responsives pour inciter à l'action, disponibles en
+                plusieurs couleurs, tailles et états.</p>
+            <div class="ly-grid space-16px">
+                <button class="btn btn--primary col-4">Primary</button>
+                <button class="btn btn--secondary col-4">Secondary</button>
+                <button class="btn btn--tertiary col-4">Hover</button>
+            </div>
+        </section>
+
+        <section id="card">
+            <h2 class="title-section">Card</h2>
+            <p class="text-section">Conteneur flexible et responsive permettant d'organiser et d'afficher du contenu
+                varié (texte, images, liens) dans un bloc moderne et personnalisable.</p>
+            <div class="ly-grid">
+
+                <div class="card card--default col-4 space-24px">
+                    <h3 class="cardtitle">Titre de la carte</h3>
+                    <p class="cardtext">Description de ma carte.</p>
+                    <a href="#" class="btn btn--primary">Découvrir</a>
+                </div>
+
+                <div class="card card--colored col-4 space-24px">
+                    <h3 class="cardtitle">Titre de la carte</h3>
+                    <p class="cardtext">Description de ma carte.</p>
+                    <a href="#" class="btn btn--secondary">Découvrir</a>
+                </div>
+
+                <div class="card card--featured col-4 space-24px">
+                    <h3 class="cardtitle">Titre de la carte</h3>
+                    <p class="cardtext">Description de ma carte.</p>
+                    <a href="#" class="btn btn--tertiary">Découvrir</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+
+            <div class="footer__brand">
+                <a href="#" class="footer__logo">Logo<span>.</span></a>
+                <p>Un projet réalisé par Raphael, Shouraya et Lea.</p>
+            </div>
+
+            <nav class="footer__nav">
+                <h3>Navigation</h3>
+                <ul class="footer__list">
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#apropos">À propos</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projets">Projets</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer__contact">
+                <h3>Contact</h3>
+                <a href="mailto:contact@studio.fr">contact@studio.fr</a>
+                <a href="#contact">Nous contacter</a>
+            </div>
+
+        </div>
+
+        <div class="footer__bottom">
+            <p>© 2026 Studio. Tous droits réservés.</p>
+            <a href="#">Mentions légales</a>
+        </div>
+    </footer>
 
 </body>
 

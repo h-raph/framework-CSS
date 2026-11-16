@@ -1,4 +1,38 @@
+@use '../abstracts/variables' as *;
+
 .btn {
-    padding: 24px 0;
-    border: none;
+    display: inline-flex;
+    align-items: center;
+    border-radius: $radius-12;
+    justify-content: center;
+    padding: 12px 20px;
+    border: 1px solid transparent;
+    font-size: $size-text;
+    font-weight: $weight-text;
+    line-height: $line-height-text;
+    text-decoration: none;
+    cursor: pointer;
+
+    &--primary {
+        background-color: $color-accent;
+        color: $color-bg;
+        border-color: $color-accent;
+    }
+
+    &--secondary {
+        background-color: $color-bg;
+        color: $color-accent;
+        border-color: $color-accent;
+    }
+
+    &--tertiary {
+        background-color: transparent;
+        color: $color-text-primary;
+        border-color: $color-text-primary;
+
+        &:hover {
+            background-color: darken($color-bg, 10%);
+            border-color: darken($color-accent, 10%);
+        }
+    }
 }
