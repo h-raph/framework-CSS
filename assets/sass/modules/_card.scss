@@ -1,0 +1,63 @@
+@use '../abstracts/variables' as *;
+
+.card {
+    width: 100%;
+    max-width: 350px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 12px;
+
+    &title {
+        font-size: $size-sous-titre;
+        font-weight: $weight-sous-titre;
+        line-height: $line-height-sous-titre;
+    }
+
+    &text {
+        font-size: $size-text;
+        font-weight: $weight-text;
+        line-height: $line-height-text;
+    }
+
+    &--default {
+        background-color: $color-bg;
+        border: 1px solid $color-accent;
+        color: $color-text-primary;
+
+        .cardtitle {
+            color: $color-text-primary;
+        }
+
+        .cardtext {
+            color: $color-text-secondary;
+        }
+    }
+
+
+    &--colored {
+        background-color: $color-yellow;
+        border: 1px solid $color-yellow;
+        color: $color-text-primary;
+
+        .cardtitle {
+            color: $color-text-primary;
+        }
+
+        .cardtext {
+            color: $color-text-secondary;
+        }
+    }
+
+    &--featured {
+        background-color: $color-accent;
+        border: 1px solid $color-accent;
+        color: $color-bg;
+
+        .cardtitle,
+        .cardtext {
+            color: $color-bg;
+        }
+    }
+}

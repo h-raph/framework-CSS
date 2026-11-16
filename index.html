@@ -17,33 +17,67 @@
         </div>
     </header>
 
-    <section class="ly-content" id="button" aria-labelledby="button-titre">
-        <h2 class="" id="button-titre">Grid</h2>
-        <p class="">Concrètement, un système de grille à 12 colonnes est une méthode 
+    <section class="ly-content" id="grid">
+        <h2 class="title-section" id="button-titre">Grid</h2>
+        <p class="text-section">Concrètement, un système de grille à 12 colonnes est une méthode
             de mise en page où la largeur de ton écran ou de ton conteneur est découpée
             en 12 colonnes invisibles et égales.</p>
 
         <div class="ly-grid space-24px">
-            <button class="col-2 btn">col-2</button>
-            <button class="col-8 btn">col-8</button>
-            <button class="col-2 btn">col-2</button>
+            <button class="col-2 div-grid">col-2</button>
+            <button class="col-8 div-grid">col-8</button>
+            <button class="col-2 div-grid">col-2</button>
         </div>
 
         <div class="ly-grid space-24px">
-            <button class="col-3 btn">col-3</button>
-            <button class="col-5 btn">col-5</button>
-            <button class="col-4 btn">col-4</button>
+            <button class="col-3 div-grid">col-3</button>
+            <button class="col-5 div-grid">col-5</button>
+            <button class="col-4 div-grid">col-4</button>
         </div>
 
         <div class="ly-grid space-24px">
-            <button class="col-7 btn">col-7</button>
-            <button class="col-5 btn">col-5</button>
+            <button class="col-7 div-grid">col-7</button>
+            <button class="col-5 div-grid">col-5</button>
         </div>
 
         <div class="ly-grid space-24px">
-            <button class="col-1 btn">col-1</button>
-            <button class="col-9 btn">col-9</button>
-            <button class="col-2 btn">col-2</button>
+            <button class="col-1 div-grid">col-1</button>
+            <button class="col-9 div-grid">col-9</button>
+            <button class="col-2 div-grid">col-2</button>
+        </div>
+    </section>
+
+    <section class="ly-content" id="button">
+        <h2 class="title-section">Button</h2>
+        <p class="text-section">Les boutons réutilisables</p>
+        <div class="ly-grid space-16px">
+            <button class="btn btn--primary col-4">Primary</button>
+            <button class="btn btn--secondary col-4">Secondary</button>
+            <button class="btn btn--tertiary col-4">Hover</button>
+        </div>
+    </section>
+
+    <section class="ly-content" id="card">
+        <h2 class="title-section">Card</h2>
+        <div class="ly-grid">
+
+            <div class="card card--default col-4 space-24px">
+                <h3 class="cardtitle">Titre de la carte</h3>
+                <p class="cardtext">Description de ma carte.</p>
+                <a href="#" class="btn btn--primary">Découvrir</a>
+            </div>
+
+            <div class="card card--colored col-4 space-24px">
+                <h3 class="cardtitle">Titre de la carte</h3>
+                <p class="cardtext">Description de ma carte.</p>
+                <a href="#" class="btn btn--secondary">Découvrir</a>
+            </div>
+
+            <div class="card card--featured col-4 space-24px">
+                <h3 class="cardtitle">Titre de la carte</h3>
+                <p class="cardtext">Description de ma carte.</p>
+                <a href="#" class="btn btn--tertiary">Découvrir</a>
+            </div>
         </div>
     </section>
 

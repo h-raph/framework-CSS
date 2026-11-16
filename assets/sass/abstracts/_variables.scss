@@ -16,7 +16,48 @@ $grid-columns: 12;
     }
 }
 
-// # Color
-$color:(
+// # Border-radius
+$radius-6: 6px;
+$radius-12: 12px;
+$radius-full: 999px;
 
-)
+// # Color
+$color-text-primary: #00131D;
+$color-text-secondary: #003049;
+
+$color-bg: #F9F7EA;
+$color-bg-2: #EAE2B7;
+
+
+$color-yellow: #FCBF49;
+$color-accent: #F77F00;
+$color-error: #D62828;
+
+// Variables de typographies
+$size-title: 56px;
+$weight-title: 800;
+$line-height-title: 64px;
+
+$size-section: 40px;
+$weight-section: 700;
+$line-height-section: 48px;
+
+$size-sous-titre: 28px;
+$weight-sous-titre: 700;
+$line-height-sous-titre: 36px;
+
+$size-text-intro: 20px;
+$weight-text-intro: 400;
+$line-height-text-intro: 32px;
+
+$size-text: 16px;
+$weight-text: 400;
+$line-height-text: 26px;
+
+$size-text-small: 14px;
+$weight-text-small: 400;
+$line-height-text-small: 22px;
+
+// # Typo
+$font-family-title: 'Poppins', sans-serif;
+$font-family-text: 'Poppins', sans-serif;
