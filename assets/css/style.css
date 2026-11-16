@@ -81,7 +81,7 @@
 .ly-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  margin: 20px 0x;
+  margin: 20px 0;
 }
 
 .btn {
